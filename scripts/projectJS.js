@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // Load both files before doing anything else
-    Promise.all([d3.json('data/us.geojson'),
-                 d3.csv('data/co2emissions.csv'),                                                
-                 d3.csv('data/co2emissionsShares.csv')])
+    Promise.all([d3.json('https://github.com/ChanMaung/CO2-Emission-Data-Viz/blob/main/data/us.geojson'),
+                 d3.csv('https://github.com/ChanMaung/CO2-Emission-Data-Viz/blob/main/data/co2emissions.csv'),                                                
+                 d3.csv('https://github.com/ChanMaung/CO2-Emission-Data-Viz/blob/main/data/co2emissionsShares.csv')])
             .then(function(values){
       
     mapData = values[0];

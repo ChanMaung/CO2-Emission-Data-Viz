@@ -1,8 +1,8 @@
 # Final Writeup
 
-CSE 494 Final Project - US Carbon Dioxide Emissions By State
+US Carbon Dioxide Emissions By State
 
-Group Members: Chan Maung, Christopher Campanella, Michael Fields
+Chan Maung, Christopher Campanella, Michael Fields
 
 ## Overview:
 ![Teaser Image](images/Teaser_Image.png)
