@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fall 2022 / Project</title>
+        <link rel='stylesheet' href='css/styles.css'>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+        <script src="https://unpkg.com/d3-simple-slider"></script>
+        <script src='scripts/projectJS.js'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    </head> 
+    <body>
+
+        <div class='container'>
+
+            <div class='row'>
+                <div class='col-12' id = 'topHeader'>
+                    <h2>US Carbon Dioxide Emissions By State</h2>
+                    
+                    
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-12 col-sm-12'>
+
+                    <h4>This page shows the CO2 emissions by state for each year selected from 2000-2018.
+                        Selecting a state on the map will update the Trends and Distribution accordingly and 
+                        click the least/most CO2 will highlight the state emitting the least/most CO2 that year accordingly.
+                    </h4>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-1 col-sm-12'>
+                    <h5>Year</h5>
+                </div>
+                <div class='col-md-3 col-sm-12'>
+                    <input id='year-input' onchange="drawMap()" type='number' value='2000'/>
+                </div>
+                <div class='col-md-1 col-sm-12'>
+                    <h5>Find</h5>
+                </div>
+                <div class='col-md-2 col-sm-12'>
+                    <button class="button1" onclick="findLeast()">Least CO2 </button>
+                </div>
+                <div class='col-md-2 col-sm-12'>
+                    <button class="button2" onclick="findMost()">Most CO2</button>
+                </div>
+            </div>
+ 
+            <div class='row'>
+                <div class='col-md-12 col-sm-12'>
+                    <svg id='svg1'></svg>
+                </div>
+            </div>  
+
+            <div class="row align-items-center">
+              <div class="col-sm"><div id="slider-time"></div></div>
+            </div> 
+
+            <div class='row'>
+                <div class='col-md-7 col-sm-12'>
+                    <h3>CO2 Trends</h3>
+                    <svg id='svg2'></svg>
+                </div>
+
+                <div class='col-md-5 col-sm-12'>
+                    <h3>CO2 Distribution</h3>
+                    <svg id='svg3'></svg>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+ 
+    </body>    
+
+
+
+
+
+
+</html>

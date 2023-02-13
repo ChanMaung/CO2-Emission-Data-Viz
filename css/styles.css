@@ -1,0 +1,76 @@
+
+
+#topHeader{
+    text-align: center;
+}
+
+#svg1 {
+    border:1px solid gray;
+    height:620px;
+    width:1080px;
+}
+
+#svg2 {
+    border:1px solid gray;
+    height:420px;
+    width:100%;
+}
+
+#svg3 {
+    border:1px solid gray;
+    height:420px;
+    width:100%;
+}
+
+
+
+select {
+    width:100%;
+    margin-bottom:5px;   
+}
+
+input {
+    width:100%;
+    margin-bottom:5px;   
+}
+.row {
+    margin-top:30px;
+}
+.container {
+    margin:auto;
+    width:100%;
+}
+
+div.tooltip-donut {
+  position: absolute;
+  text-align: center;
+  padding: .5rem;
+  background: #FFFFFF;
+  color: #313639;
+  border: 1px solid #313639;
+  border-radius: 8px;
+  pointer-events: none;
+  font-size: 1.3rem;
+  white-space: pre-wrap;
+}
+
+.button1{
+    background-color: greenyellow;
+}
+
+.button2{
+    background-color: purple;
+}
+
+
+
+
+  .track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    stroke: transparent;
+    cursor: crosshair;
+  }
+
+
+
